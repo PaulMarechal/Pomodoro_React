@@ -4,10 +4,16 @@ body{
 }
 
 main{
-  padding-top: 50px;
+  padding-top: 30px;
   max-width: 350px;
   margin: 0 auto;
   text-align: center;
+}
+
+label{
+  display: block;
+  margin: 20px 0px 10px 0px;
+  font-weight: bold;
 }
 
 button{
@@ -38,3 +44,8 @@ button.cogButton svg{
   margin-right: 8px;
   float: left;
 }
+
+.settingsDisplay{
+  text-align: left;
+}
+
