@@ -9,3 +9,32 @@ main{
   margin: 0 auto;
   text-align: center;
 }
+
+button{
+  background-color: transparent;
+  border: 0;
+  color: rgba(250, 250, 250, 0.808);
+  display: inline-block;
+  width: 20%;
+  cursor: pointer;
+}
+
+.clock, .cog{
+  margin-top: 20px;
+}
+
+button.cogButton{
+  width: auto;
+  border-radius: 15px;
+  padding: 10px 20px;
+  font-size: 0.9em;
+  line-height: 29px;
+  background-color: rgba(255, 255, 255, 0.1);
+  cursor: help;
+}
+
+button.cogButton svg{
+  width: 30px;
+  margin-right: 8px;
+  float: left;
+}
