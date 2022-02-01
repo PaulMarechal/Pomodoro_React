@@ -4,11 +4,14 @@ import 'react-circular-progressbar/dist/styles.css';
 import PlayButton from './PlayButton';
 import PauseButton from './PauseButton';
 import CogButton from './CogButton';
+import {useContext} from 'react';
+import OptionsContext from './OptionsContext'
 
 const red = "#df2d2d";
 const green = "#12da00";
 
 function Timer(){
+    const optionsInfos = useContext(OptionsContext);
     return(
         <div>
             <CircularProgressbar value={60} text={`${60}%`} styles={buildStyles({
@@ -41,7 +44,7 @@ function Timer(){
             </div>
 
             <div class="cog">
-                <CogButton />
+                <CogButton onClick={() => optionsInfos.setShowCog(true)} />
             </div>
 
 
