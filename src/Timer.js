@@ -1,9 +1,9 @@
 import { CircularProgressbar, buildStyles } from 'react-circular-progressbar';
 import 'react-circular-progressbar/dist/styles.css';
 
-import PlayButton from './PlayButton';
-import PauseButton from './PauseButton';
-import CogButton from './CogButton';
+import PlayButton from './Buttons/PlayButton';
+import PauseButton from './Buttons/PauseButton';
+import CogButton from './Buttons/CogButton';
 import {useContext, useState, useEffect, useRef} from 'react';
 import OptionsContext from './OptionsContext'
 
@@ -69,43 +69,36 @@ function Timer(){
 
 
     return(
-        <div>
-            <CircularProgressbar 
+        <div className="progressBarStyle">
+            <CircularProgressbar  
+                className="circularProgressBar"
                 value={percent} 
                 text={`${minutesTimer} : ${secondesTimer}`} 
                 styles={buildStyles({
                 // Rotation of path and trail, in number of turns (0-1)
                 rotation: 0,
-
                 // Whether to use rounded or flat corners on the ends - can use 'butt' or 'round'
                 strokeLinecap: 'round',
-
                 // Text size
                 textSize: '16px',
-
                 // How long animation takes to go from one percentage to another, in seconds
                 pathTransitionDuration: 4,
-
                 // Can specify path transition in more detail, or remove it entirely
                 // pathTransition: 'none',
-
                 // Colors
-                //pathColor: `rgba(62, 152, 199, ${60 / 100})`,
                 pathColor: colorProgressbar === 'Work' ? red : green, 
                 textColor: '#ffff',
                 trailColor: 'rgba(260, 260, 260, 0.3)',
-                //backgroundColor: '#3e98c7',
             })} />
 
             <div class="clock">
-                {paused ? <PlayButton />:<PauseButton />}   
+                {paused ? <PlayButton onClick={() => {setPaused(false); pausedRef.current = false;}}/>:
+                          <PauseButton onClick={() => {setPaused(true); pausedRef.current = true}}/>}   
             </div>
 
             <div class="cog">
                 <CogButton onClick={() => optionsInfos.setShowCog(true)} />
             </div>
-
-
         </div>
     );
 }

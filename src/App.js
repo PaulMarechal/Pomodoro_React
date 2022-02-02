@@ -3,9 +3,7 @@ import Cog from './Cog';
 import OptionsContext from './OptionsContext';
 import {useState} from "react";
 
-import './App.css';
-
-
+import './Style/App.css';
 
 function App() {
 
@@ -15,12 +13,12 @@ function App() {
   return (
     <main>
       <OptionsContext.Provider value={{
-        showCog: showCog,
-        setShowCog: setShowCog,
-        workTime: workTime, 
-        breakTime: breakTime,
-        setWorkTime: setWorkTime, 
-        setBreakTime: setBreakTime,
+        showCog,
+        setShowCog,
+        workTime, 
+        breakTime,
+        setWorkTime, 
+        setBreakTime,
       }}>
         {showCog ? <Cog /> : <Timer />}  
       </OptionsContext.Provider>

@@ -1,0 +1,63 @@
+.sliderRed{
+    height: 30px;
+    width: 108%;
+    border: 2px solid rgb(241, 83, 83);
+    border-radius: 30px;
+    /* margin-top: -5em; */
+}
+
+.sliderGreen{
+    height: 30px;
+    width: 107%;
+    border-radius: 30px;
+    border: 2px solid rgb(37, 211, 37);
+}
+
+.thumbRed{
+    cursor: pointer;
+    background-color: red;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+
+.thumbGreen{
+    background-color: rgb(45, 235, 45);
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+
+.buttonReturn{
+    text-align: left;
+    margin-left: -10em;
+}
+
+.settingsDisplay{
+    background: rgba( 255, 255, 255, 0.25 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 4.5px );
+    -webkit-backdrop-filter: blur( 4.5px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    padding: 0px 50px 30px 30px;
+}
+
+.titreSettings{
+    text-align: left;
+    font-size: 20px;
+}
+
+.workTimeSettings{
+    margin-top: -3em;
+}
+
+.circularProgressBar{
+    background: rgba( 255, 255, 255, 0.25 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 4.5px );
+    -webkit-backdrop-filter: blur( 4.5px );
+    border-radius: 50%;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
