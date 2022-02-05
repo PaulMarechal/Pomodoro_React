@@ -1,3 +1,14 @@
+# Pomodoro App 
+
+## Pomodoro App en React 
+
+- Décompte temps de travail 
+- Décompte temps de repos
+- Paramètres pour modifier temps de travail et pause
+
+Réalisé dans le cadre de la licence 3 à la Sorbonne | CFA des Sciences avec M. Esling et Mme. Devis
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
